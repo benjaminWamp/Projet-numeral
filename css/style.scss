@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.index{
+    .acceuil{
+        background-color: #3B61F4;
+        color: #FFF;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 100vh;
+        
+        .info{
+            display: grid;
+            grid-template-rows: 33% 33% 33%;
+
+            .payement{
+                p{
+                    font-size: 56px;
+                }
+                H2{
+                    font-size: 56px;
+                }
+                span{
+                    font-size: 18px;
+                }        
+            }
+        }
+    }
+}
