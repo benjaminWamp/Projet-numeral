@@ -58,7 +58,7 @@
                     align-items: center;
                     font-family: "Inter";
                     font-size: 16px;
-                    p{
+                    p {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
@@ -77,32 +77,31 @@
                     }
                 }
             }
-            .logo{
+            .logo {
                 display: grid;
                 grid-template-columns: 33% 33% 33%;
-                p{
+                margin-bottom: 3%;
+                .flex {
                     display: flex;
                     flex-direction: column;
                     justify-content: end;
-                }
-                img{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: end;
-                    align-items: flex-end;
+                    align-items: flex-start;
+                    img {
+                        height: 20px;
+                    }
                 }
             }
         }
     }
-    .article{
+    .article {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 33% 33% 33%;
         padding: 7%;
-        .alignement{
+        .alignement {
             display: grid;
             grid-template-columns: 7% 50%;
-            p{
+            p {
                 font-family: "Inter";
                 font-size: 12px;
                 display: flex;
@@ -113,14 +112,14 @@
                 font-weight: bold;
             }
         }
-        .legende{
-            h2{
+        .legende {
+            h2 {
                 font-family: NeurialGroteskMeduim;
                 font-size: 38px;
                 font-weight: bold;
                 width: 425px;
             }
-            p{
+            p {
                 font-family: "Inter";
                 font-size: 18px;
                 color: #616575;
@@ -128,21 +127,95 @@
                 padding-top: 2%;
             }
         }
-        .explore{
+        .explore {
             width: 25%;
             height: 7%;
-            background-color: #EAEEFF;
+            background-color: #eaeeff;
             border-radius: 8px;
-            a{
+            .flex {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                text-align: center;
+            }
+            a {
                 text-decoration: none;
 
-                p{
+                p {
                     font-size: 14px;
                     color: #3b61f4;
+                }
+            }
+        }
+    }
+    .fin {
+        background-color: #3b61f4;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 56px;
+            font-family: "NeurialGroteskBold";
+            color: #fff;
+        }
+        p {
+            font-size: 56px;
+            font-family: "NeurialGrotesklight";
+            color: #fff;
+        }
+        .expert {
+            background-color: #1e3076;
+            border-radius: 8px;
+            padding: 1% 4% 1% 1%;
+            margin-top: 3%;
+            height: 3%;
+            width: 10%;
+            a {
+                text-decoration: none;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                p {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+                    font-size: 16px;
+                    font-family: "Inter";
                 }
+            }
+            .fleche {
+                position: absolute;
+                transform: translate(724%, -1027%);
+                .corp {
+                    border-top: #fff solid 1px;
+                    width: 20px;
+                }
+                .pointe {
+                    position: absolute;
+                    transform: translate(126%, -50%);
+                    color: #fff;
+                }
+            }
+        }
+        .logo {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            padding-top: 5%;
+            width: 750px;
+            .flex {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            p {
+                font-size: 14px;
             }
         }
     }
