@@ -58,6 +58,11 @@
                     align-items: center;
                     font-family: "Inter";
                     font-size: 16px;
+                    p{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                    }
                 }
                 .fleche {
                     position: absolute;
@@ -114,6 +119,30 @@
                 font-size: 38px;
                 font-weight: bold;
                 width: 425px;
+            }
+            p{
+                font-family: "Inter";
+                font-size: 18px;
+                color: #616575;
+                width: 425px;
+                padding-top: 2%;
+            }
+        }
+        .explore{
+            width: 25%;
+            height: 7%;
+            background-color: #EAEEFF;
+            border-radius: 8px;
+            a{
+                text-decoration: none;
+
+                p{
+                    font-size: 14px;
+                    color: #3b61f4;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
             }
         }
     }
