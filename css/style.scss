@@ -1,29 +1,119 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.index{
-    .acceuil{
-        background-color: #3B61F4;
-        color: #FFF;
+@font-face {
+    font-family: NeurialGroteskBold;
+    src: url(./Neurial_Grotesk_Font_Family/NeurialGrotesk-Bold.otf);
+}
+@font-face {
+    font-family: NeurialGroteskLight;
+    src: url(./Neurial_Grotesk_Font_Family/NeurialGrotesk-Light.otf);
+}
+@font-face {
+    font-family: NeurialgroteskMeduim;
+    src: url(./Neurial_Grotesk_Font_Family/NeurialGrotesk-Medium.otf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+.index {
+    .acceuil {
+        background-color: #3b61f4;
+        color: #fff;
         display: grid;
         grid-template-columns: 50% 50%;
         height: 100vh;
-        
-        .info{
-            display: grid;
-            grid-template-rows: 33% 33% 33%;
 
-            .payement{
-                p{
+        .info {
+            display: grid;
+            grid-template-rows: 40% 33% 26%;
+            padding: 15% 0% 0% 5%;
+
+            .payement {
+                p {
                     font-size: 56px;
+                    font-family: "NeurialGrotesklight";
                 }
-                H2{
+                H1 {
                     font-size: 56px;
+                    font-family: "NeurialGroteskBold";
                 }
-                span{
+                span {
                     font-size: 18px;
-                }        
+                    font-family: "Inter";
+                }
+            }
+            .expert {
+                background-color: #1e3076;
+                border-radius: 8px;
+                padding: 2% 7% 2% 1%;
+                margin-top: 3%;
+                height: 9%;
+                width: 23%;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: "Inter";
+                    font-size: 16px;
+                }
+                .fleche {
+                    position: absolute;
+                    transform: translate(724%, -1027%);
+                    .corp {
+                        border-top: #fff solid 1px;
+                        width: 20px;
+                    }
+                    .pointe {
+                        position: absolute;
+                        transform: translate(126%, -50%);
+                    }
+                }
+            }
+            .logo{
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+                p{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                }
+                img{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+    .article{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
+        padding: 7%;
+        .alignement{
+            display: grid;
+            grid-template-columns: 7% 50%;
+            p{
+                font-family: "Inter";
+                font-size: 12px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-transform: uppercase;
+                color: #3b61f4;
+                font-weight: bold;
+            }
+        }
+        .legende{
+            h2{
+                font-family: NeurialGroteskMeduim;
+                font-size: 38px;
+                font-weight: bold;
+                width: 425px;
             }
         }
     }

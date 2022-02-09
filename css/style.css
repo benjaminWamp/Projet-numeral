@@ -1,11 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
+@font-face {
+  font-family: NeurialGroteskBold;
+  src: url(./Neurial_Grotesk_Font_Family/NeurialGrotesk-Bold.otf);
+}
+
+@font-face {
+  font-family: NeurialGroteskLight;
+  src: url(./Neurial_Grotesk_Font_Family/NeurialGrotesk-Light.otf);
+}
+
+@font-face {
+  font-family: NeurialgroteskMeduim;
+  src: url(./Neurial_Grotesk_Font_Family/NeurialGrotesk-Medium.otf);
+}
+
 .index .acceuil {
-  background-color: #3B61F4;
-  color: #FFF;
+  background-color: #3b61f4;
+  color: #fff;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -16,19 +32,147 @@
 .index .acceuil .info {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 33% 33% 33%;
-      grid-template-rows: 33% 33% 33%;
+  -ms-grid-rows: 40% 33% 26%;
+      grid-template-rows: 40% 33% 26%;
+  padding: 15% 0% 0% 5%;
 }
 
 .index .acceuil .info .payement p {
   font-size: 56px;
+  font-family: "NeurialGrotesklight";
 }
 
-.index .acceuil .info .payement H2 {
+.index .acceuil .info .payement H1 {
   font-size: 56px;
+  font-family: "NeurialGroteskBold";
 }
 
 .index .acceuil .info .payement span {
   font-size: 18px;
+  font-family: "Inter";
+}
+
+.index .acceuil .info .expert {
+  background-color: #1e3076;
+  border-radius: 8px;
+  padding: 2% 7% 2% 1%;
+  margin-top: 3%;
+  height: 9%;
+  width: 23%;
+}
+
+.index .acceuil .info .expert a {
+  text-decoration: none;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inter";
+  font-size: 16px;
+}
+
+.index .acceuil .info .expert .fleche {
+  position: absolute;
+  -webkit-transform: translate(724%, -1027%);
+          transform: translate(724%, -1027%);
+}
+
+.index .acceuil .info .expert .fleche .corp {
+  border-top: #fff solid 1px;
+  width: 20px;
+}
+
+.index .acceuil .info .expert .fleche .pointe {
+  position: absolute;
+  -webkit-transform: translate(126%, -50%);
+          transform: translate(126%, -50%);
+}
+
+.index .acceuil .info .logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+}
+
+.index .acceuil .info .logo p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.index .acceuil .info .logo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.index .article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 33% 33% 33%;
+      grid-template-rows: 33% 33% 33%;
+  padding: 7%;
+}
+
+.index .article .alignement {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7% 50%;
+      grid-template-columns: 7% 50%;
+}
+
+.index .article .alignement p {
+  font-family: "Inter";
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #3b61f4;
+  font-weight: bold;
+}
+
+.index .article .legende h2 {
+  font-family: NeurialGroteskMeduim;
+  font-size: 38px;
+  font-weight: bold;
+  width: 425px;
 }
 /*# sourceMappingURL=style.css.map */
