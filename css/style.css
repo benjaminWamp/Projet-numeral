@@ -96,8 +96,8 @@
 
 .index .acceuil .info .expert .fleche {
   position: absolute;
-  -webkit-transform: translate(724%, -1027%);
-          transform: translate(724%, -1027%);
+  -webkit-transform: translate(868%, -1027%);
+          transform: translate(868%, -1027%);
 }
 
 .index .acceuil .info .expert .fleche .corp {
@@ -107,8 +107,8 @@
 
 .index .acceuil .info .expert .fleche .pointe {
   position: absolute;
-  -webkit-transform: translate(126%, -50%);
-          transform: translate(126%, -50%);
+  -webkit-transform: translate(126%, -56%);
+          transform: translate(126%, -56%);
 }
 
 .index .acceuil .info .logo {
@@ -191,9 +191,12 @@
 
 .index .article .explore {
   width: 25%;
-  height: 7%;
+  /* height: 7%; */
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #eaeeff;
   border-radius: 8px;
+  margin-top: 3%;
 }
 
 .index .article .explore .flex {
@@ -216,10 +219,10 @@
 .index .article .explore a p {
   font-size: 14px;
   color: #3b61f4;
+  font-family: "Inter";
 }
 
 .index .fin {
-  background-color: #3b61f4;
   height: 420px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,6 +237,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .index .fin h2 {
@@ -292,8 +296,8 @@
 
 .index .fin .expert .fleche {
   position: absolute;
-  -webkit-transform: translate(724%, -1027%);
-          transform: translate(724%, -1027%);
+  -webkit-transform: translate(835%, -1027%);
+          transform: translate(835%, -1027%);
 }
 
 .index .fin .expert .fleche .corp {
@@ -303,8 +307,8 @@
 
 .index .fin .expert .fleche .pointe {
   position: absolute;
-  -webkit-transform: translate(126%, -50%);
-          transform: translate(126%, -50%);
+  -webkit-transform: translate(126%, -57%);
+          transform: translate(126%, -57%);
   color: #fff;
 }
 
