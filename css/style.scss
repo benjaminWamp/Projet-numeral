@@ -17,11 +17,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 .index {
     .acceuil {
-        background-color: #3b61f4;
         color: #fff;
         display: grid;
         grid-template-columns: 50% 50%;
         height: 100vh;
+        video{
+            position: absolute;
+            z-index: -1;
+            width: 99vw;
+
+        }
 
         .info {
             display: grid;
