@@ -98,6 +98,7 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: 33% 33% 33%;
         padding: 7%;
+        background-color: #fff;
         .alignement {
             display: grid;
             grid-template-columns: 7% 50%;
@@ -129,7 +130,6 @@
         }
         .explore {
             width: 25%;
-            /* height: 7%; */
             padding-top: 10px;
             padding-bottom: 10px;
             background-color: #eaeeff;
@@ -152,74 +152,83 @@
             }
         }
     }
-    .fin {
-        height: 420px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .overflow{
         overflow: hidden;
+    video {
+        position: absolute;
+        z-index: -1;
+        width: 99vw;
+    }
 
-        h2 {
-            font-size: 56px;
-            font-family: "NeurialGroteskBold";
-            color: #fff;
-        }
-        p {
-            font-size: 56px;
-            font-family: "NeurialGrotesklight";
-            color: #fff;
-        }
-        .expert {
-            background-color: #1e3076;
-            border-radius: 8px;
-            padding: 1% 4% 1% 1%;
-            margin-top: 3%;
-            height: 3%;
-            width: 10%;
-            a {
-                text-decoration: none;
+        .fin {
+            height: 420px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            h2 {
+                font-size: 56px;
+                font-family: "NeurialGroteskBold";
                 color: #fff;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                p {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    font-size: 16px;
-                    font-family: "Inter";
-                }
-            }
-            .fleche {
-                position: absolute;
-                transform: translate(835%, -1027%);
-                .corp {
-                    border-top: #fff solid 1px;
-                    width: 20px;
-                }
-                .pointe {
-                    position: absolute;
-                    transform: translate(126%, -57%);
-                    color: #fff;
-                }
-            }
-        }
-        .logo {
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
-            padding-top: 5%;
-            width: 750px;
-            .flex {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
             }
             p {
-                font-size: 14px;
+                font-size: 56px;
+                font-family: "NeurialGrotesklight";
+                color: #fff;
+            }
+            .expert {
+                background-color: #1e3076;
+                border-radius: 8px;
+                padding: 1% 4% 1% 1%;
+                margin-top: 3%;
+                height: 3%;
+                width: 10%;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        font-size: 16px;
+                        font-family: "Inter";
+                    }
+                }
+                .fleche {
+                    position: absolute;
+                    transform: translate(835%, -1027%);
+                    .corp {
+                        border-top: #fff solid 1px;
+                        width: 20px;
+                    }
+                    .pointe {
+                        position: absolute;
+                        transform: translate(126%, -57%);
+                        color: #fff;
+                    }
+                }
+            }
+            .logo {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+                padding-top: 5%;
+                width: 750px;
+                .flex {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                p {
+                    font-size: 14px;
+                }
             }
         }
     }

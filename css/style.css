@@ -147,6 +147,7 @@
   -ms-grid-rows: 33% 33% 33%;
       grid-template-rows: 33% 33% 33%;
   padding: 7%;
+  background-color: #fff;
 }
 
 .index .article .alignement {
@@ -191,7 +192,6 @@
 
 .index .article .explore {
   width: 25%;
-  /* height: 7%; */
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #eaeeff;
@@ -222,7 +222,17 @@
   font-family: "Inter";
 }
 
-.index .fin {
+.index .overflow {
+  overflow: hidden;
+}
+
+.index .overflow video {
+  position: absolute;
+  z-index: -1;
+  width: 99vw;
+}
+
+.index .overflow .fin {
   height: 420px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,19 +250,19 @@
   overflow: hidden;
 }
 
-.index .fin h2 {
+.index .overflow .fin h2 {
   font-size: 56px;
   font-family: "NeurialGroteskBold";
   color: #fff;
 }
 
-.index .fin p {
+.index .overflow .fin p {
   font-size: 56px;
   font-family: "NeurialGrotesklight";
   color: #fff;
 }
 
-.index .fin .expert {
+.index .overflow .fin .expert {
   background-color: #1e3076;
   border-radius: 8px;
   padding: 1% 4% 1% 1%;
@@ -261,7 +271,7 @@
   width: 10%;
 }
 
-.index .fin .expert a {
+.index .overflow .fin .expert a {
   text-decoration: none;
   color: #fff;
   display: -webkit-box;
@@ -279,7 +289,7 @@
           align-items: center;
 }
 
-.index .fin .expert a p {
+.index .overflow .fin .expert a p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,25 +304,25 @@
   font-family: "Inter";
 }
 
-.index .fin .expert .fleche {
+.index .overflow .fin .expert .fleche {
   position: absolute;
   -webkit-transform: translate(835%, -1027%);
           transform: translate(835%, -1027%);
 }
 
-.index .fin .expert .fleche .corp {
+.index .overflow .fin .expert .fleche .corp {
   border-top: #fff solid 1px;
   width: 20px;
 }
 
-.index .fin .expert .fleche .pointe {
+.index .overflow .fin .expert .fleche .pointe {
   position: absolute;
   -webkit-transform: translate(126%, -57%);
           transform: translate(126%, -57%);
   color: #fff;
 }
 
-.index .fin .logo {
+.index .overflow .fin .logo {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 33% 33% 33%;
@@ -321,7 +331,7 @@
   width: 750px;
 }
 
-.index .fin .logo .flex {
+.index .overflow .fin .logo .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,7 +347,7 @@
           align-items: center;
 }
 
-.index .fin .logo p {
+.index .overflow .fin .logo p {
   font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
