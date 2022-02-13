@@ -82,6 +82,8 @@ header .header .droite .expert {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 170px;
+  height: 35px;
 }
 
 header .header .droite .expert a {
@@ -101,7 +103,7 @@ header .header .droite .expert a {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Inter";
-  font-size: 16px;
+  font-size: 15px;
   color: #fff;
 }
 
