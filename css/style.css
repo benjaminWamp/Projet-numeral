@@ -19,6 +19,118 @@
   src: url(./Neurial_Grotesk_Font_Family/NeurialGrotesk-Medium.otf);
 }
 
+header .header {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1%;
+  width: 99%;
+}
+
+header .header .gauche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1%;
+  width: 80%;
+}
+
+header .header ul {
+  list-style-type: none;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .header li {
+  display: inline;
+  font-family: "Inter";
+  color: #fff;
+  font-size: 14px;
+}
+
+header .header .droite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .header .droite .expert {
+  background-color: #1e3076;
+  border-radius: 8px;
+  padding: 2%;
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header .droite .expert a {
+  text-decoration: none;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inter";
+  font-size: 16px;
+  color: #fff;
+}
+
+header .header .droite .expert a p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header .droite .expert .fleche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 10.5%;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #fff;
+}
+
 .index .acceuil {
   color: #fff;
   display: -ms-grid;
@@ -31,7 +143,9 @@
 .index .acceuil video {
   position: absolute;
   z-index: -1;
-  width: 99vw;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .index .acceuil .info {
@@ -39,7 +153,7 @@
   display: grid;
   -ms-grid-rows: 40% 33% 26%;
       grid-template-rows: 40% 33% 26%;
-  padding: 15% 0% 0% 5%;
+  padding: 16% 0% 0% 5%;
 }
 
 .index .acceuil .info .payement p {
@@ -60,10 +174,16 @@
 .index .acceuil .info .expert {
   background-color: #1e3076;
   border-radius: 8px;
-  padding: 2% 7% 2% 1%;
+  padding: 2%;
   margin-top: 3%;
   height: 9%;
   width: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .index .acceuil .info .expert a {
@@ -100,20 +220,15 @@
 }
 
 .index .acceuil .info .expert .fleche {
-  position: absolute;
-  -webkit-transform: translate(868%, -1027%);
-          transform: translate(868%, -1027%);
-}
-
-.index .acceuil .info .expert .fleche .corp {
-  border-top: #fff solid 1px;
-  width: 20px;
-}
-
-.index .acceuil .info .expert .fleche .pointe {
-  position: absolute;
-  -webkit-transform: translate(126%, -56%);
-          transform: translate(126%, -56%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 10.5%;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .index .acceuil .info .logo {
@@ -142,6 +257,10 @@
 
 .index .acceuil .info .logo .flex img {
   height: 20px;
+}
+
+.index .acceuil .info .logo .flex p {
+  font-family: "Inter";
 }
 
 .index .article {
@@ -227,17 +346,13 @@
   font-family: "Inter";
 }
 
-.index .overflow {
-  overflow: hidden;
-}
-
-.index .overflow video {
+.index video {
   position: absolute;
   z-index: -1;
-  width: 99vw;
+  width: 100%;
 }
 
-.index .overflow .fin {
+.index .fin {
   height: 420px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,28 +370,34 @@
   overflow: hidden;
 }
 
-.index .overflow .fin h2 {
+.index .fin h2 {
   font-size: 56px;
   font-family: "NeurialGroteskBold";
   color: #fff;
 }
 
-.index .overflow .fin p {
+.index .fin p {
   font-size: 56px;
   font-family: "NeurialGrotesklight";
   color: #fff;
 }
 
-.index .overflow .fin .expert {
+.index .fin .expert {
   background-color: #1e3076;
   border-radius: 8px;
-  padding: 1% 4% 1% 1%;
+  padding: 1%;
   margin-top: 3%;
   height: 3%;
   width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.index .overflow .fin .expert a {
+.index .fin .expert a {
   text-decoration: none;
   color: #fff;
   display: -webkit-box;
@@ -292,9 +413,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 219px;
 }
 
-.index .overflow .fin .expert a p {
+.index .fin .expert a p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,29 +427,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Inter";
 }
 
-.index .overflow .fin .expert .fleche {
-  position: absolute;
-  -webkit-transform: translate(835%, -1027%);
-          transform: translate(835%, -1027%);
-}
-
-.index .overflow .fin .expert .fleche .corp {
-  border-top: #fff solid 1px;
-  width: 20px;
-}
-
-.index .overflow .fin .expert .fleche .pointe {
-  position: absolute;
-  -webkit-transform: translate(126%, -57%);
-          transform: translate(126%, -57%);
+.index .fin .expert .fleche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 10.5%;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   color: #fff;
 }
 
-.index .overflow .fin .logo {
+.index .fin .logo {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 33% 33% 33%;
@@ -336,7 +453,7 @@
   width: 750px;
 }
 
-.index .overflow .fin .logo .flex {
+.index .fin .logo .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,7 +469,118 @@
           align-items: center;
 }
 
-.index .overflow .fin .logo p {
+.index .fin .logo p {
   font-size: 14px;
+  font-family: "inter";
+}
+
+footer .footer {
+  background-color: #0f183b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer .infoFooter {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 15% 15% 15% 15%;
+      grid-template-columns: 30% 15% 15% 15% 15%;
+  margin-top: 5%;
+}
+
+footer .footer .infoFooter .logoFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-left: 10%;
+}
+
+footer .footer .infoFooter div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+footer .footer .infoFooter div h1 {
+  font-family: "NeurialgroteskMeduim";
+  margin-bottom: 10%;
+  font-size: 18px;
+}
+
+footer .footer .infoFooter div a {
+  text-decoration: none;
+  font-family: "Inter";
+  color: #fff;
+  margin-bottom: 5%;
+  font-size: 14px;
+}
+
+footer .footer .infoFooter div img {
+  margin-bottom: 5%;
+}
+
+footer .footer .infoFooter div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer .infoFooter div:nth-child(4) {
+  margin-top: 24%;
+}
+
+footer .footer .midle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer .midle .droit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 90%;
+}
+
+footer .footer .midle .droit p {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 12px;
+  margin: 1%;
 }
 /*# sourceMappingURL=style.css.map */
