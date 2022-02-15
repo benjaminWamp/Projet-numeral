@@ -39,6 +39,10 @@ header .header {
         font-family: "Inter";
         color: #fff;
         font-size: 14px;
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
     }
     .droite {
         display: flex;
