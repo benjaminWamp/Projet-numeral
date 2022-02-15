@@ -62,6 +62,11 @@ header .header li {
   font-size: 14px;
 }
 
+header .header li a {
+  color: #fff;
+  text-decoration: none;
+}
+
 header .header .droite {
   display: -webkit-box;
   display: -ms-flexbox;
